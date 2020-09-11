@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="/logo.jpg">
+
+	<title>Tarea Clase 5</title>
+</head>
+
+<body>
+
+	<h1 class="titulo" id="titulo">Queremos saber cuantas horas lleva hablando Fabri</h1>
+	<h2 class="subtitulo " id="subtitulo ">¿Nos das una mano cargando clases?</h2>
+
+	<form id="entrada-bar" onsubmit="return false;" class="form">
+
+		<input type="number" placeholder="Número de la clase que vas a cargar" id="nombre-clase" class="inputUsuario" />
+		<br>
+		<br>
+		<input type="number" placeholder="Cantidad de horas" id="hora-clase" class="inputUsuario" />
+		<br>
+		<br>
+		<input type="number" placeholder="Cantidad de minutos" id="minutos-clase" class="inputUsuario" />
+		<br>
+		<br>
+		<input type="number" placeholder="Cantidad de segundos" id="segundos-clase" class="inputUsuario" />
+		<br>
+		<br>
+		<input type="submit" value="Calcular tiempo total" id="ingresar" class="btn" />
+	</form>
+
+
+	<strong id="resultado" class="resultado">La información de la clase va a aparecer acá</strong>
+
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>

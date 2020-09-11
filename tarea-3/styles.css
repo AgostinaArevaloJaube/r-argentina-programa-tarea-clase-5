@@ -31,10 +31,18 @@ body {
 .titulo {
 	margin: 40px;
 	font-size: 40px;
+	color: rgb(77, 77, 77);
+}
+
+.subtitulo {
+	margin: 40px;
+	font-size: 30px;
+	color: rgb(77, 77, 77);
 }
 
 .resultado {
 	width: 40%;
+	display: block;
 	padding: 40px;
 	height: 30px;
 	margin: 0 auto;

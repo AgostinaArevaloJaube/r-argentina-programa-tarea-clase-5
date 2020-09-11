@@ -1,15 +1,15 @@
-// 1: consigo el boton y la caja de texto.
+// 1: consigo el boton, la caja de texto y el titulo.
 const $btnIngresar = document.querySelector('#ingresar');
 const $resultado = document.querySelector('#resultado');
+const $titulo = document.querySelector('#titulo');
 
 // 2. agrego la funcion al clickear el boton
 $btnIngresar.onclick = function () {
-	// 3. consigo los valores de los campos que necesito
-	const nombreClase = document.querySelector('#nombre-clase').value;
-	const horaClase = document.querySelector('#hora-clase').value;
-	const minutosClase = document.querySelector('#minutos-clase').value;
-	const segundosClase = document.querySelector('#segundos-clase').value;
+	// 3. consigo nombre y edad
+	const nombreUsuario = document.querySelector('#nombre-usuario').value;
+	const edadUsuario = document.querySelector('#edad-usuario').value;
 
-	// 4. muestro los datos en la caja de texto.
-	$resultado.innerHTML = `En la clase ${nombreClase}, Fabri se la jugó y habló ${horaClase}:${horaClase}:${segundosClase}.`;
+	// 4. muestro los datos en la caja de texto y reemplazo el titulo.
+	$resultado.innerHTML = ` Tu nombre es ${nombreUsuario} y tenes ${edadUsuario}`;
+	$titulo.innerHTML = `Bienvenida ${nombreUsuario}`;
 }
