@@ -1,36 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
-	<link rel="icon" href="/logo.jpg">
-
-	<title>Tarea Clase 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="icon" href="/logo.jpg">
+    <title>Tarea Clase 5</title>
 </head>
 
 <body>
 
-	<form id="entrada-bar" onsubmit="return false;" class="form">
-		<input type="text" placeholder="Ingresá tu nombre" id="nombre-usuario" class="inputUsuario" />
-		<br>
-		<br>
-		<input type="number" placeholder="Ingresá tu edad" id="edad-usuario" class="inputUsuario" />
-		<br>
-		<br>
-		<input type="submit" value="Ingresar" id="ingresar" class="btn" />
-	</form>
 
-	<h1 class="titulo" id="titulo">¡Hola!</h1>
+    <ul class="list">
+        <li class="listItem"><a id="listLinks" href="/index.html">Inicio</a></li>
+        <li class="listItem"><a id="listLinks" href="/tarea-1/index.html">Tarea 1</a></li>
+        <li class="listItem"><a id="listLinks" href="/tarea-2/index.html">Tarea 2</a></li>
+        <li class="listItem"><a id="listLinks" href="/tarea-3/index.html">Tarea 3</a></li>
+        <li class="listItem"><a id="listLinks" href="/tarea-4/index.html">Tarea 4</a></li>
+    </ul>
 
-	<div id="resultado" class="resultado">Tu información va a aparecer acá</div>
+    <h1 class="titulo" id="titulo">Calculando tu salario mensual</h1>
+    <h2 class="subtitulo " id="subtitulo ">Sólo tenes que ingresar tu salario anual</h2>
 
-
-
-	<script src="main.js"></script>
+    <form class="form">  
+        <label for="salario-anual">Salario anual:</label>
+        <input type="number" id="salario-anual" placeholder="Ej.: 100000" class="inputUsuario"/>
+        <br>
+        <br>
+        <label for="salario-anual">Salario mensual:</label>
+        <input type="number" disabled id="salario-mensual" class="inputUsuario"/>
+        <br>
+        <br>
+        <button type="button" id="calcular-salario-mensual" class="btn">Calcular</button>
+        <button type="reset" class="btn">Limpiar</button>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 </html>

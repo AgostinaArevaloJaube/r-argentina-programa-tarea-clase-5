@@ -1,15 +1,22 @@
-// 1: consigo el boton, la caja de texto y el titulo.
-const $btnIngresar = document.querySelector('#ingresar');
-const $resultado = document.querySelector('#resultado');
-const $titulo = document.querySelector('#titulo');
 
-// 2. agrego la funcion al clickear el boton
-$btnIngresar.onclick = function () {
-	// 3. consigo nombre y edad
-	const nombreUsuario = document.querySelector('#nombre-usuario').value;
-	const edadUsuario = document.querySelector('#edad-usuario').value;
+// Paso 1: agaro el boton
+const $btnCalcularSalarioMensual = document.querySelector(
+	'#calcular-salario-mensual'
+);
+// El signo $ es para darnos cuenta de que es un elemento del DOM
 
-	// 4. muestro los datos en la caja de texto y reemplazo el titulo.
-	$resultado.innerHTML = ` Tu nombre es ${nombreUsuario} y tenes ${edadUsuario}`;
-	$titulo.innerHTML = `Bienvenida ${nombreUsuario}`;
+// Paso 2: creo la función que calcula el salario anual
+function calcularSalarioMensual(salarioAnual) {
+	return salarioAnual / 12;
 }
+
+// Paso 3: creo el evento dónde consulo el input del usuario, ejecuto la función calcular y lo muestro en pantalla
+$btnCalcularSalarioMensual.onclick = function (event) {
+	event.preventDefault();
+	const INPUT_USUARIO = document.querySelector('#salario-anual').value;
+	const $mostrarSalarioMensual = document.querySelector('#salario-mensual');
+	const salarioAnual = Number(INPUT_USUARIO);
+	const salarioMensual = calcularSalarioMensual(salarioAnual);
+
+	$mostrarSalarioMensual.value = salarioMensual;
+};
