@@ -16,8 +16,6 @@ section{
 	text-align: left;
 }
 .list{
-	width: 50%;
-	margin: 0 0 0 55%;
 	list-style: none;
 	display: flex;
 	justify-content: center;
