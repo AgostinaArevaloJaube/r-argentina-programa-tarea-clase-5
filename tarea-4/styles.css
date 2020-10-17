@@ -2,7 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #e6beae;
+	background-color: #aed9e0;
 	font-family: 'Roboto', sans-serif;
 
 }
@@ -23,31 +23,40 @@ section{
 	justify-content: center;
 }
 
-.listItem {
-	padding: 10px;
-	cursor: pointer;
+.list{
+	width: 50%;
+	margin: 0 0 0 55%;
+	list-style: none;
+	display: flex;
+	justify-content: center;
 }
 
-#listLiks {
+.listItem {
+	padding: 20px;
+}
+
+a {
 	text-decoration: none;
+	font-weight: 500;
+	font-size: 18px;
 	color: rgb(77, 77, 77);
 }
 
-#listLiks:hover {
+a:hover {
 	text-decoration: underline;
 	color: rgb(208, 148, 148);
 }
 
-#listLiks:active {
-	text-decoration: none;
-}
-#listLiks:link {
-	text-decoration: none;
-}
-#listLiks:visited {
-	text-decoration: none;
+a:active {
+	text-decoration: underline;
 }
 
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
 .titulo {
 	margin: 40px;
 	font-size: 40px;

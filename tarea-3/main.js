@@ -1,15 +1,47 @@
 // 1: consigo el boton y la caja de texto.
 const $btnIngresar = document.querySelector('#ingresar');
 const $resultado = document.querySelector('#resultado');
+const $inputsUsuario = document.querySelectorAll('.inputClases');
 
-// 2. agrego la funcion al clickear el boton
-$btnIngresar.onclick = function () {
-	// 3. consigo los valores de los campos que necesito
-	const nombreClase = document.querySelector('#nombre-clase').value;
-	const horaClase = document.querySelector('#hora-clase').value;
-	const minutosClase = document.querySelector('#minutos-clase').value;
-	const segundosClase = document.querySelector('#segundos-clase').value;
+const $inputHoras = document.querySelectorAll('.horas');
+const $inputMinutos = document.querySelectorAll('.minutos');
+const $inputSegundos = document.querySelectorAll('.segundos');
 
-	// 4. muestro los datos en la caja de texto.
-	$resultado.innerHTML = `En la clase ${nombreClase}, Fabri se la jugó y habló ${horaClase}:${horaClase}:${segundosClase}.`;
+console.log($inputHoras);
+console.log($inputMinutos);
+console.log($inputSegundos);
+
+function convertirASegundos(horas, minutos, segundos) {
+	horas = Number(horas * 3600);
+	minutos = Number(minutos * 60);
+	segundos = Number(segundos);
+	return horas + minutos + segundos;
 }
+
+function calcularTiempo(params) {
+	let horasTotales = 0;
+	let minutosTotales = 0;
+	let segundosTotales = 0;
+
+	for (i = 0; i < $inputHoras.length; i++) {
+		horasTotales += Number($inputHoras[i].value);
+	}
+	console.log(horasTotales);
+
+	for (i = 0; i < $inputMinutos.length; i++) {
+		minutosTotales += Number($inputMinutos[i].value);
+	}
+	console.log(minutosTotales);
+
+	for (i = 0; i < $inputSegundos.length; i++) {
+		segundosTotales += Number($inputSegundos[i].value);
+	}
+	console.log(segundosTotales);
+
+	$resultado.innerHTML = `En las primeras 5 clases Fabri se la jugó y habló ${horasTotales} horas, ${minutosTotales} minutos y ${segundosTotales} segundos.`;
+}
+
+$btnIngresar.onclick = function (event) {
+	event.preventDefault();
+	calcularTiempo();
+};

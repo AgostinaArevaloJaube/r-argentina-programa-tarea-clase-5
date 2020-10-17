@@ -8,7 +8,7 @@ body {
 	color: rgb(77, 77, 77);
 }
 
-.list{
+.list {
 	width: 50%;
 	margin: 0 0 0 55%;
 	list-style: none;
@@ -50,7 +50,13 @@ a:visited {
 
 .inputUsuario {
 	padding: 10px;
-	width: 60%;
+	border-radius: 10px;
+	border: lightgray;
+}
+
+.inputClases {
+	padding: 10px;
+	margin: 5px 0 5px 0;
 	border-radius: 10px;
 	border: lightgray;
 }
@@ -67,7 +73,6 @@ a:visited {
 .titulo {
 	margin: 60px;
 	font-size: 40px;
-
 }
 
 .subtitulo {

@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="/styles.css">
 	<link rel="icon" href="/logo.jpg">
 
 	<title>Tarea Clase 5</title>
@@ -14,23 +14,44 @@
 
 <body>
 
-	<h1 class="titulo" id="titulo">Queremos saber cuantas horas lleva hablando Fabri</h1>
+	<ul class="list">
+		<li class="listItem"><a id="listLinks" href="/index.html">Inicio</a></li>
+		<li class="listItem"><a id="listLinks" href="/tarea-1/index.html">Tarea 1</a></li>
+		<li class="listItem"><a id="listLinks" href="/tarea-2/index.html">Tarea 2</a></li>
+		<li class="listItem"><a id="listLinks" href="/tarea-3/index.html">Tarea 3</a></li>
+		<li class="listItem"><a id="listLinks" href="/tarea-4/index.html">Tarea 4</a></li>
+	</ul>
+
+	<h1 class="titulo" id="titulo">Queremos saber cuantas horas habló Fabri</h1>
 	<h2 class="subtitulo " id="subtitulo ">¿Nos das una mano cargando clases?</h2>
 
-	<form id="entrada-bar" onsubmit="return false;" class="form">
+	<form id="entrada-bar" class="form">
 
-		<input type="number" placeholder="Número de la clase que vas a cargar" id="nombre-clase" class="inputUsuario" />
+		<label>Clase #1</label>
+		<input type="number" placeholder="Cantidad de horas" id="clase-1-horas" class="inputClases horas" />
+		<input type="number" placeholder="Cantidad de minutos" id="clase-1-minutos" class="inputClases minutos" />
+		<input type="number" placeholder="Cantidad de segundos" id="clase-1-segundos" class="inputClases segundos" />
 		<br>
+		<label>Clase #2</label>
+		<input type="number" placeholder="Cantidad de horas" id="clase-2-horas" class="inputClases horas" />
+		<input type="number" placeholder="Cantidad de minutos" id="clase-2-minutos" class="inputClases minutos" />
+		<input type="number" placeholder="Cantidad de segundos" id="clase-2-segundos" class="inputClases segundos" />
 		<br>
-		<input type="number" placeholder="Cantidad de horas" id="hora-clase" class="inputUsuario" />
+		<label>Clase #3</label>
+		<input type="number" placeholder="Cantidad de horas" id="clase-3-horas" class="inputClases horas" />
+		<input type="number" placeholder="Cantidad de minutos" id="clase-3-minutos" class="inputClases minutos" />
+		<input type="number" placeholder="Cantidad de segundos" id="clase-3-segundos" class="inputClases segundos" />
 		<br>
+		<label>Clase #4</label>
+		<input type="number" placeholder="Cantidad de horas" id="clase-4-horas" class="inputClases horas" />
+		<input type="number" placeholder="Cantidad de minutos" id="clase-4-minutos" class="inputClases minutos" />
+		<input type="number" placeholder="Cantidad de segundos" id="clase-4-segundos" class="inputClases segundos" />
 		<br>
-		<input type="number" placeholder="Cantidad de minutos" id="minutos-clase" class="inputUsuario" />
-		<br>
-		<br>
-		<input type="number" placeholder="Cantidad de segundos" id="segundos-clase" class="inputUsuario" />
-		<br>
-		<br>
+		<label>Clase #5</label>
+		<input type="number" placeholder="Cantidad de horas" id="clase-5-horas" class="inputClases horas" />
+		<input type="number" placeholder="Cantidad de minutos" id="clase-5-minutos" class="inputClases minutos" />
+		<input type="number" placeholder="Cantidad de segundos" id="clase-5-segundos" class="inputClases segundos" />
+
 		<input type="submit" value="Calcular tiempo total" id="ingresar" class="btn" />
 	</form>
 
