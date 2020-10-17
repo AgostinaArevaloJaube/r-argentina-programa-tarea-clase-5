@@ -11,13 +11,6 @@ console.log($inputHoras);
 console.log($inputMinutos);
 console.log($inputSegundos);
 
-function convertirASegundos(horas, minutos, segundos) {
-	horas = Number(horas * 3600);
-	minutos = Number(minutos * 60);
-	segundos = Number(segundos);
-	return horas + minutos + segundos;
-}
-
 function calcularTiempo(params) {
 	let horasTotales = 0;
 	let minutosTotales = 0;
