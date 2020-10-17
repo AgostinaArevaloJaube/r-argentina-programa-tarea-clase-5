@@ -28,6 +28,8 @@ function calcularTiempo(params) {
 
 	for (i = 0; i < $inputSegundos.length; i++) {
 		segundosTotales += Number($inputSegundos[i].value);
+
+		
 	}
 	console.log(segundosTotales);
 
