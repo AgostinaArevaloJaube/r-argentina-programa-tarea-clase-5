@@ -1,10 +1,11 @@
 // 1: consigo el boton, la caja de texto y el titulo.
 const $btnIngresar = document.querySelector('#ingresar');
 const $resultado = document.querySelector('#resultado');
-const $titulo = document.querySelector('#titulo');
+const $titulo = document.querySelector('#saludo');
 
 // 2. agrego la funcion al clickear el boton
-$btnIngresar.onclick = function () {
+$btnIngresar.onclick = function (event) {
+	event.preventDefault()
 	// 3. consigo nombre y edad
 	const nombreUsuario = document.querySelector('#nombre-usuario').value;
 	const edadUsuario = document.querySelector('#edad-usuario').value;
