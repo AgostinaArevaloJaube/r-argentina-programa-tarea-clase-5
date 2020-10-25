@@ -1,4 +1,5 @@
-## Tareas Clase 5
+# Tareas Clase 5
+## [r/argentina programa](https://argentinaprograma.com/) es un curso para aprender JavaScript desde 0, gratis y en español. Dictado por Fabricio Sodano.
 
 [Live Demo](https://r-argentinaprograma-clase5.netlify.app/)
 
